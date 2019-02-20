@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML中級課題２</title>
+  </head>
+  <body>
+    <h1>フォームレッスン</h1>
+    <p>以下のフォームを埋めてください。（＊は必須項目）</p>
+    <form>
+      <div>
+        <label for="username">※ユーザー名:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div>
+        <label for="password">※パスワード(６文字以上):</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+        />
+      </div>
+      <div>
+        ※性別:
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">女性</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">男性</label>
+      </div>
+      <div>
+        ※生年月日:
+        <label for="year">年:</label>
+        <select name="year" id="year" name="year" required>
+          <option value="">---</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2001">2002</option>
+        </select>
+        <label for="month">月:</label>
+        <select name="month" id="month" name="month" required>
+          <option value="">---</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="12">12</option>
+        </select>
+        <label for="date">日:</label>
+        <select name="date" id="date" name="date" required>
+          <option value="">---</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="31">31</option>
+        </select>
+      </div>
+      <div>
+        <label for="bikouran">備考欄:</label>
+        <div>
+          <textarea
+            name="bikouran"
+            id="bikouran"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <div><input type="submit" /></div>
+    </form>
+  </body>
+</html>
